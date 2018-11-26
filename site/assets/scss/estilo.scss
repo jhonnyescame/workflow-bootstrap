@@ -1,0 +1,47 @@
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "../../../node_modules/breakpoint-sass/stylesheets/breakpoint";
+
+// POS HEADER //
+@import "variables";
+
+// @include make-sm-column-offset(3);
+// @include make-md-column-offset(3);
+
+// @include make-sm-column(6);//tablet
+// @include make-xs-column(12);//celular
+// @include make-md-column(6);//deskpot
+
+.header-bg{
+	background-color: #c0c0c0;
+	
+	.header{
+		@include make-sm-column(6);//tablet
+		@include make-xs-column(6);//celular
+		@include make-md-column(6);//deskpot
+	}
+}
+
+.conteudo{
+	background-color: #E9E9E9;
+	.box-conteudo{
+		@include make-sm-column(12);//tablet
+		@include make-xs-column(12);//celular
+		@include make-md-column(12);//deskpot
+		#logo{
+			position: relative;
+			padding: 10px;
+			text-align:center;
+			width:170px;
+			height: 220px;
+			margin: 0 auto;
+			img{
+				width:100%;
+			}
+		}
+		h2{
+			text-align: center;
+		}
+	}
+}
